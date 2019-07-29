@@ -1,0 +1,61 @@
+Rapport d'assemblage
+
+-----------------------------------------------------------------------------
+Document :
+Nom : LEMON-QUEEN-DESKTOP.ai
+Mode : Couleurs RVB
+Profil colorimétrique : sRGB IEC61966-2.1
+Unité : pixels
+Dimensions : 1200 px x 2631 px
+Afficher les images en mode Tracés : INACTIF
+Mettre en évidence les polices substituées : INACTIF
+Mettre en évidence les glyphes substitués : INACTIF
+Conserver le caractère modifiable du texte
+Simuler le papier couleur : INACTIF
+
+-----------------------------------------------------------------------------
+Objets en tons directs :
+
+-----------------------------------------------------------------------------
+Polices manquantes :SANS
+
+-----------------------------------------------------------------------------
+Polices protégées non assemblées :SANS
+
+-----------------------------------------------------------------------------
+Polices :
+Barlow Thin (OTF)
+Barlow Regular (OTF)
+Barlow Medium (OTF)
+Barlow Medium Italic (OTF)
+Elsie (OTF)
+Elsie Black (OTF)
+Myriad Pro (OTF)
+
+-----------------------------------------------------------------------------
+Polices incorporées :
+SANS
+
+-----------------------------------------------------------------------------
+Liens manquants :
+SANS
+
+-----------------------------------------------------------------------------
+Images liées :
+
+/Utilisateurs/Laure-Marie_Torre/Documents/Laure-Marie/TRAVAIL/FORMATION/PROJET GROUPE/contenu site/page d'accueil/ca52528a1def43cb601a6be3776d0cd1e0b071ec_home-2019-07-selection-soins-matifiants-fr.png
+Type : RVB transparent
+Bits par pixel : 32
+Couches : 4
+Taille : 3562K, 1600 x 570 pixels
+Dimensions : 1199,187 x 427,21 points 
+Résolution : 96,065 x 96,065 pixels par pouce
+
+
+/Utilisateurs/Laure-Marie_Torre/Téléchargements/alone-depressed-depression-2653411.jpg
+Type : RVB
+Bits par pixel : 24
+Couches : 3
+Taille : 73233K, 4330 x 5773 pixels
+Dimensions : 1197,941 x 1597,162 points 
+Résolution : 260,247 x 260,247 pixels par pouce
