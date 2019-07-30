@@ -1,8 +1,34 @@
-body {
+body, p {
     font-family: 'Barlow', sans-serif;
 }
 
-.titre {
+.titre, h2 {
     font-family: 'Barlow', sans-serif;
     font-family: 'Elsie', cursive;
 }
+
+/* page produits */
+#produit_img {
+    width:100%;
+    align-content:center;
+
+}
+/* fin page produits */
+#res_img, #sug_img {
+     width:100%;
+    align-content:center;
+}
+/* page résultats formulaire */
+#résultats_form, #suggestions {
+    height: 50vh;
+
+}
+/* fin résultats */
+/* page produit seul */
+img {
+     width:100%;
+    align-content:center;
+}
+
+
+/* fin produit */
