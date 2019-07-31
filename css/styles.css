@@ -1,8 +1,157 @@
-body {
-    font-family: 'Barlow', sans-serif;
+/* STYLES GENERAUX */
+
+html{
+    height: 100em;
 }
 
-.titre {
+body {
+body, p {
+    font-family: 'Barlow', sans-serif;
+    background: url("../img/background.png") center top/ 100% no-repeat, linear-gradient(#fcdb4e, #fcc1f6, #d3cb65);
+    color: #000b10;;
+}
+
+.titre, h2 {
     font-family: 'Barlow', sans-serif;
     font-family: 'Elsie', cursive;
+}
+
+/* HEADER */
+
+.identite_visuelle {
+    width:210px;
+    min-height: 10px;
+}
+
+.accroche {
+    width:250px;
+    min-height: 10px;
+}
+
+
+img {
+    width: 100%;
+}
+
+li.left {
+    display: inline-block;
+    margin: 0px 0px 0px 15px;
+    padding: 0;
+}
+
+li.right {
+    display: inline-block;
+    margin: 0px 15px 0px 0px;
+    padding: 0;
+}
+
+a {
+    color: #000b10;;
+}
+
+.navbar {
+    font-size: 1.3em;
+    margin-top: 50px;
+}
+
+.baseline {
+    font-family: 'Elsie Swash Caps', cursive;
+    font-weight: bold;
+    font-size: 20px;
+}
+/* MAIN */
+
+.intro {
+    font-family: 'Elsie', cursive;
+    font-size: 25px;
+    margin-top:8px;
+}
+
+.formulaire {
+    font-family: 'Elsie', cursive;
+    font-size: 300%;
+    margin-top: 210px;
+}
+
+.clickform {
+    font-size: 20px;
+    font-weight: bold;
+    border-color: #000b10;
+    background: none;
+    text-transform: uppercase;
+}
+
+h1.title{
+    font-family: 'Elsie Swash Caps', cursive;
+    font-weight: bold;
+    font-size: 50px;
+    margin-top: 100px;
+    margin-bottom: 50px;
+    border-bottom: 2px solid #000b10;
+}
+
+h2.intro {
+    font-family: 'Elsie Swash Caps', cursive;
+    font-weight: bold;
+}
+
+.bstof{
+    font-size: 20px;
+}
+
+/* PRODUIT */
+
+.nameproduct {
+    font-family: 'Elsie Swash Caps', cursive;
+    font-weight: bold;
+}
+
+.brand {
+    font-weight: bold;
+}
+.price {
+    font-weight: bold;
+    font-size: 20px,
+}
+
+/* FOOTER */
+
+footer {
+    min-height: 250px;
+    background-color: #f9f5fa;
+}
+
+input {
+    font-size: 19px;
+    font-weight: bold;
+    border-color: #000b10;
+    background: none;
+    height: 35px;
+    border-width: 2px;
+    width: 250px;
+}
+
+.email {
+    font-weight: bold;
+    border-color: #000b10;
+    background: linear-gradient(-90deg,#fcdb4e, #fcc1f6, #d3cb65);
+    font-size: 19px;
+    height: 35px;
+    border-width: 2px;
+    width: 200px;
+}
+
+.rule {
+    font-style: italic;
+    margin-top: 10px;
+}
+
+ul.list {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+.navfooter {
+    margin-top: 40px;
 }
