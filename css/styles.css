@@ -4,8 +4,7 @@ html{
     height: 100em;
 }
 
-body {
-body, p {
+body{
     font-family: 'Barlow', sans-serif;
     background: url("../img/background.png") center top/ 100% no-repeat, linear-gradient(#fcdb4e, #fcc1f6, #d3cb65);
     color: #000b10;;
@@ -27,11 +26,13 @@ body, p {
     width:250px;
     min-height: 10px;
 }
-
-
+/* fin résultats */
+/* page produit seul */
 img {
-    width: 100%;
+    width:100%;
+   align-content:center;
 }
+
 
 li.left {
     display: inline-block;
@@ -170,12 +171,6 @@ ul.list {
 #résultats_form, #suggestions {
     height: 50vh;
 
-}
-/* fin résultats */
-/* page produit seul */
-img {
-     width:100%;
-    align-content:center;
 }
 
 
