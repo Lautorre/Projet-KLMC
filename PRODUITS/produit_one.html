@@ -12,13 +12,13 @@
 		<link href="https://fonts.googleapis.com/css?family=Barlow|Elsie&display=swap|Elsie+Swash+Caps&display=swap" rel="stylesheet">
 
 		<link rel="shortcut icon" href="../img/favicon.png">
-		<link rel="stylesheet" type="text/css" href="../css/styles.css">
+		<link rel="stylesheet" type="text/css" href="css/styles.css">
 		<!-- <link rel="stylesheet" type="text/css" href="css/Reset.css"> -->
 		<!-- <link rel="stylesheet" type="text/css" href="css/Normalize.css"> -->
         <!--[if lt IE 9]><script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script> <![endif]-->
     </head>
 
-    <body>
+    <body id="produit">
         <!-- NAVBAR-->
         <header id="header" class="container-fluid">
             <div class="container-fluid mt-3">
@@ -73,20 +73,31 @@
 
         <main>
             <div class="container">
-                <div class="row col-12">
-                    <section id="illustration" class="col-6 mr-2">
-                        <img src="../img/logo_lemon-queen.png" alt="image du produit sélectionné">
-                    </section>
-                    <section id="détails_produits" class="mb-2">
-                    <div class="text-center">
-                        <h2 class="">Masque au miel etc</h2>
-                        <small>Catégorie</small>
+                <div class="row">
+
+                    <!--Photo produit-->
+                    <div class="col-6 mr-2" >
+                            <img src="../img/2_veritable_eau_florale_fleur_d_oranger_bigaradier_bio_front.png" alt="image du produit sélectionné" class="selected_products">
+                    </div>
+                    
+                    <!--Description produit-->
+                    <div class="col-6 mb-2">
+                        <div class="text-center">
+                            <h2 class="titre_produit">Véritable Eau Florale de Rose Ancienne 
+                                    certifiée Bio</h2>
+                            <h3 class="categorie">Hydrolat</h3>
+                            <p>
+                                Lotion de soin peau revitalisée et éclatante – Certifiée Bio
+                                Eau florale de Rose Ancienne Bio. Réputée pour ses vertus tonifiantes et illuminatrices, la Véritable Eau Florale de Rose Ancienne Bio est l’alliée des peaux en quête d’éclat.
+                                
+                            </p>
                         <div>
                             Prix
                             Contenance
                             Quantité 
                         </div>
                         <button class="btn">Panier</button>
+                        
                         <p>
                             <a class="btn btn-light" data-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false"
                                 aria-controls="collapseExample">Bénéfice</a></p>
@@ -123,10 +134,66 @@
                 </div>
             </div>
         </main>
+
+        <!--FOOTER-->
+        <footer>
+                <div class="container">
+                    <div class="row">
+                        <div class="navfooter col-12 col-md-2">
+                            <p class="nameproduct">Service client</p>
+                            <nav class="d-block w-100 text-left">
+                                <ul class="list">
+                                    <li><a href="">CGU</a></li>
+                                    <li><a href="">CGV</a></li>
+                                    <li><a href="">Mentions légales</a></li>
+                                    <li><a href="">Livraison</a></li>
+                                    <li><a href="">Connexion/Inscription</a></li>
+                                </ul>
+                            </nav>
+                        </div>
+    
+                        <div class="navfooter col-12 col-md-2">
+                            <p class="nameproduct">Lemon Queen</p>
+                            <nav class="d-block w-100 text-left">
+                                <ul class="list">
+                                    <li><a href="">Notre histoire</a></li>
+                                    <li><a href="">Formulaire</a></li>
+                                    <li><a href="">Journal</a></li>
+                                    <li><a href="">Shop</a></li>
+                                </ul>
+                            </nav>
+                        </div>
+    
+                        <div class="navfooter col-12 col-md-2">
+                            <p class="nameproduct">Informations</p>
+                            <p>Lemon Queen</br>
+                                PLACE WILSON</br>
+                                06000 NICE</br>
+                                FRANCE</p>
+                        </div>
+    
+                        <div class="navfooter col-12 col-md-6 mx-auto">
+                            <p class="nameproduct">Devenez reine à votre tour et </br> recevez notre newsletter</p>
+                            <form>
+                                <input type="email" name="newsletter" method="post">
+                                <input type="submit" name="s'abonner" style="background: linear-gradient(-90deg,#fcdb4e, #fcc1f6, #d3cb65); width:150px;">
+                            </form>
+                            <p class="rule">Vous pouvez vous désinscrire à tout moment. 
+                                    Vous trouverez pour cela nos informations de contact
+                                    dans les conditions d'utilisation du site.</p>
+                                
+                            
+    
+                        </div>
+                    </div>
+                </div>
+            </footer>
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="js/scripts_form.js"></script>
+    
   </body>
 </html>
