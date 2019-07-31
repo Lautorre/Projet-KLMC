@@ -75,25 +75,48 @@
             <div class="container">
                 <div class="row">
                     <!--Photo produit-->
-                    <div class="col-6 mr-2" >
-                            <img src="../img/2_veritable_eau_florale_fleur_d_oranger_bigaradier_bio_front.png" alt="image du produit sélectionné" class="selected_products">
+                    <div class="col-6" >
+                        <img src="../img/2_veritable_eau_florale_fleur_d_oranger_bigaradier_bio_front.png" 
+                        alt="image du produit sélectionné" class="selected_products">
                     </div>
                     
                     <!--Description produit-->
                     <div class="col-6 mb-2">
-                        <div class="text-center">
+
+                        <div class="text-left">
                             <h2 class="titre_produit">Véritable Eau Florale de Rose Ancienne 
                                     certifiée Bio</h2>
-                            <h3 class="categorie">Hydrolat</h3>
+                            <h3 class="marque">Sanoflore</h3>
+
                             <p>
-                                Lotion de soin peau revitalisée et éclatante – Certifiée Bio
+                                <span>Description :</span>Lotion de soin peau revitalisée et éclatante – Certifiée Bio
                                 Eau florale de Rose Ancienne Bio. Réputée pour ses vertus tonifiantes et illuminatrices, la Véritable Eau Florale de Rose Ancienne Bio est l’alliée des peaux en quête d’éclat.
                             </p>
-                            <p>Prix</p>
-                            <p>Contenance</p>
-                            <p>Quantité</p>
+                            <p class="prix">11,50 €</p>
+                            <p>200ml</p>
+
+                            <!--bouton quantite-->
+
+                            <div class="quantité">
+                                <div class="input-group">
+                                    <input type="text" id="quantity" name="quantity" class="input-number text-center" value="1" min="1" max="100">
+
+                                    <span class="input-group-btn">
+                                        <button type="button" class="quantity-right-plus btn btn-number" data-type="plus" data-field="">
+                                            <span class="glyphicon glyphicon-plus">+</span>
+                                        </button>
+                                    </span>
+
+                                    <span class="input-group-btn">
+                                        <button type="button" class="quantity-left-minus btn btn-number" data-type="minus" data-field="">
+                                            <span class="glyphicon glyphicon-minus">-</span>
+                                        </button>
+                                    </span>
+                                </div>
+                            </div>
+
+                            <button class="btn">Panier</button>
                         </div>
-                        <button class="btn">Panier</button>
                         
                         <p><a class="btn btn-light" data-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false"
                         aria-controls="collapseExample">Bénéfice</a></p>
