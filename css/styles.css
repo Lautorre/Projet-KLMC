@@ -155,6 +155,18 @@ ul.list {
     align-content:center;
 
 }
+.parent {
+    position:relative;
+
+}
+.parent:hover button {
+    opacity: 1;
+}
+
+.quickview {
+    position: absolute;
+    opacity: 1;
+}
 /* fin page produits */
 #res_img, #sug_img {
      width:100%;
