@@ -4,8 +4,18 @@ html{
 
 body{
     font-family: 'Barlow', sans-serif;
+
 }
 
 .creerCompte{
     font-family: 'Cookie', cursive;
+}
+
+.divider {
+    border-left: 3px lightsteelblue;
+    height: 500px;
+    position: absolute;
+    left: 50%;
+    margin-left: -3px;
+    top: 0;
 }
