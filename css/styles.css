@@ -152,6 +152,7 @@ ul.list {
 }
 .parent {
     position:relative;
+    
 
 }
 .parent:hover button {
