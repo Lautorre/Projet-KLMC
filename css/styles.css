@@ -11,11 +11,6 @@ body{
     font: 100%;
 }
 
-.titre, h2 {
-    font-family: 'Barlow', sans-serif;
-    font-family: 'Elsie', cursive;
-}
-
 /* HEADER */
 
 .identite_visuelle {
