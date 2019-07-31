@@ -6,8 +6,9 @@ html{
 
 body{
     font-family: 'Barlow', sans-serif;
-    background: url("../img/background.png") center top/ 100% no-repeat, linear-gradient(#fcdb4e, #fcc1f6, #d3cb65);
-    color: #000b10;;
+    background: url("../img/background.png") center top/ cover no-repeat, linear-gradient(#fcdb4e, #fcc1f6, #d3cb65);
+    color: #000b10;
+    font: 100%;
 }
 
 .titre, h2 {
@@ -71,7 +72,7 @@ a {
 .formulaire {
     font-family: 'Elsie', cursive;
     font-size: 300%;
-    margin-top: 210px;
+    margin-top: 300px;
 }
 
 .clickform {
@@ -123,28 +124,20 @@ footer {
 }
 
 input {
-    font-size: 19px;
     font-weight: bold;
     border-color: #000b10;
     background: none;
-    height: 35px;
-    border-width: 2px;
-    width: 250px;
-}
-
-.email {
-    font-weight: bold;
-    border-color: #000b10;
-    background: linear-gradient(-90deg,#fcdb4e, #fcc1f6, #d3cb65);
     font-size: 19px;
     height: 35px;
     border-width: 2px;
-    width: 200px;
+    width: 300px;
 }
+
 
 .rule {
     font-style: italic;
     margin-top: 10px;
+    padding-right: 50px;
 }
 
 ul.list {
