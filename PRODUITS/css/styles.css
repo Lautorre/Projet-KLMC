@@ -24,6 +24,7 @@ body {
     min-height: 10px;
 }
 /* fin résultats */
+
 /* page produit seul */
 img {
     width:100%;
@@ -57,7 +58,7 @@ a {
     font-weight: bold;
     font-size: 20px;
 }
-/* PRODUITS */
+/* PAGE PRODUIT *//* PAGE PRODUIT *//* PAGE PRODUIT *//* PAGE PRODUIT *//* PAGE PRODUIT */
 
 .selected_products {
     width: 400px;
@@ -124,7 +125,6 @@ h1.title{
     border-bottom: 1px solid #000b10;
 }
 
-/* PRODUIT */
 
 .nameproduct {
     font-family: 'Elsie Swash Caps', cursive;
@@ -157,6 +157,7 @@ input {
 }
 
 /* input section adresse panier */
+
 input[type="checkbox"] {
     height:10px;
     width: 10px;
@@ -177,7 +178,8 @@ ul.list {
 .navfooter {
     margin-top: 40px;
 }
-/* page produits */
+
+/* QUICKVIEW */
 
 #produit_img {
     width:100%;
@@ -192,21 +194,39 @@ ul.list {
     opacity: 1;
 }
 
+.parent {
+    position:relative;
+}
+
 .quickview {
     position: absolute;
     opacity: 1;
-}
-/* fin page produits */
-#res_img, #sug_img {
-     width:100%;
-    align-content:center;
-}
-/* page résultats formulaire */
-#résultats_form, #suggestions {
-    height: 50vh;
-    width:100%
-
+    text-transform: uppercase;
+    border-width: 2px;
+    border-color: #000b10;
+    border-radius: 0;
+    background-color: rgba(249, 245, 250, 0.5);
+    font-size: 20px;
+    opacity: 0;
+    color: #000b10;
 }
 
+.fermer {
+    border-width: 2px;
+    border-color: #000b10;
+    border-radius: 0;
+    margin-bottom: 10px;
+}
 
-/* fin produit */
+.quickview:hover {
+    opacity: 0.8;
+    color: #000b10;
+}
+
+/* POPUP */
+
+#quickview_popup{
+    background-color : rgb(242, 189, 222);
+    width: 75vw;
+    display: none;
+}
