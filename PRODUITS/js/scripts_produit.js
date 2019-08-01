@@ -58,6 +58,11 @@ $(document).ready(function(){
                 }
     });  
     
+// MENU MOBILE
+    $('#mobile').on('click', function () {
+        $('#navigation_mobile').slideToggle(300);
+    });
+
     // MENU DESCRIPTION
 
     $('.cara_produits_1').css('display', 'none');
@@ -73,6 +78,14 @@ $(document).ready(function(){
     $('.cara_butn_3').on('click',function(){
         $('.cara_produits_3').slideToggle(200);
     })
+
+//  MENU SHOP 
+
+        $('#dropdownMenuButton').on('click',function () {
+            $('.cara_produits_1').slideToggle(300);
+        });
+
+
 
     // SLIDER
     $('.autoplay').slick({
