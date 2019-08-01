@@ -1,8 +1,6 @@
 $(document).ready(function(){
 
-    // FOND PROGRESSIF
-
-    
+    // FOND PROGRESSIF PAGE RESULTAT PRODUIT
 
     function EasyPeasyParallax() {
         let scrollPos = $(document).scrollTop();
@@ -25,6 +23,28 @@ $(document).ready(function(){
         });
     });
 
+    function EasyPeasyParallax() {
+        let scrollPos = $(document).scrollTop();
+        let targetOpacity = 0;
+        console.log('scroll position:'+(scrollPos*100)/10);
+        
+        let userHeight = Math.max(document.documentElement.clientHeight, window.innerHeight || 0);
+        scrollPos > 0.20*userHeight ? ( targetOpacity = ((scrollPos*100)/10 ) / 10000) : 1;
+
+        console.log(targetOpacity)
+        $('#shop').css({
+            'background-color': 'rgba(196, 226, 245, '+ targetOpacity +')'
+        });
+        console.log(scrollPos,targetOpacity);
+    };
+    
+    $(function(){
+        $(window).scroll(function() {
+            EasyPeasyParallax();
+        });
+    });
+
+        
        // SLIDER
        $('.autoplay').slick({
         slidesToShow: 4,

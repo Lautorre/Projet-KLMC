@@ -1,99 +1,244 @@
-<!doctype html>
 <html lang="fr">
-  <head>
-    <title>Nos produits</title>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css"> 
-    <link rel="stylesheet" href="../css/styles.css">
-  </head>
-  <body>
+	<head>
+		<meta charset="utf-8">
+		<title>Lemon Queen !</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1"/>
+		<link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" 
+		integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+		<link href="https://fonts.googleapis.com/css?family=Barlow|Elsie&display=swap|Elsie+Swash+Caps&display=swap" rel="stylesheet">
+
+        <link rel="shortcut icon" href="../img/favicon.png">
+        <link rel="stylesheet" type="text/css" href="slick/slick.css"/>
+        <link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
+		<link rel="stylesheet" type="text/css" href="css/styles.css">
+		<!-- <link rel="stylesheet" type="text/css" href="css/Reset.css"> -->
+		<!-- <link rel="stylesheet" type="text/css" href="css/Normalize.css"> -->
+        <!--[if lt IE 9]><script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script> <![endif]-->
+    </head>
+
+    <body id="shop">
    
-      <main>
-          <div class="container">
-              <div class="row col-12 text-center m-2 float-right mt-3">
-                 <div class="parent" class="article col-4">
-                    <img src="" id="produit_img" alt="Produit jpg grand">
-                     <div class="quickview">
-                        <a href="#">
-                            <img src="" alt="produit mini" data-fancybox class="mt-2">
-                        </a>
+        <main>
+            <!-- Table matière --><!-- Table matière --><!-- Table matière --><!-- Table matière -->
+            <div class="navbar_2 container mt-3">
+                <div class="row">
+                    <div class="col-3">
+                        <h3>Catégorie</h3>
+                        <ul class="tri">
+                            <li><a href="">Soins hydratants</a></li>
+                            <li><a href="">Soins anti-âge</a></li>
+                            <li><a href="">Gommage et Masque</a></li>
+                            <li><a href="">Nettoyants et démaquillants</a></li>
+                            <li><a href="">Hydrolats</a></li>
+                            <li><a href="">Soins Yeux</a></li>
+                        </ul>
                     </div>
-                     <p>Nom :</p>
-                     <p>Marque :</p>
-                     <p>Catégorie :</p>
-                     <p>
-                         <span>€</span>
-                    </p>
-                     <p>
-                         <span>mL</span>
-                    </p>
-                 </div>
-                 <div class="article col-4">
-                     <img src="" alt="" class="mt-2">
-                     <p>Nom :</p>
-                     <p>Marque :</p>
-                     <p>Catégorie :</p>
-                     <p><span>€</span></p>
-                     <p><span>mL</span></p>
-                 </div>
-                 <div class="article col-4">
-                     <img id="produit_img"src="../img/logo_lemon-queen.png" alt="" class="mt-2 mx-auto d-block mb-3">
-                     <p>Nom :</p>
-                     <p>Marque :</p>
-                     <p>Catégorie :</p>
-                     <p> 
-                         <span>€</span>  
-                    </p>
-                     <p>
-                        <span>mL</span> 
-                    </p>
-                 </div>
-                 <div class="article col-4">
-                     <img src="" alt="" class="mt-2">
-                     <p>Nom :</p>
-                     <p>Marque :</p>
-                     <p>Catégorie :</p>
-                     <p>
-                         <span>€</span>
-                    </p>
-                     <p>
-                         <span>mL</span>
-                    </p>
-                 </div>
-                 <div class="article col-4">
-                     <img src="" alt="" class="mt-2">
-                     <p>Nom :</p>
-                     <p>Marque :</p>
-                     <p>Catégorie :</p>
-                     <p> 
-                         <span>€</span> </p>
-                     <p> 
-                         <span>mL</span> </p>
-                 </div>
-                 <div class="article col-4">
-                     <img src="" alt="" class="mt-2">
-                     <p>Nom :</p>
-                     <p>Marque :</p>
-                     <p>Catégorie :</p>
-                     <p> 
-                         <span>€</span> </p>
-                     <p> 
-                         <span>mL</span> </p>
-                 </div>
+                    <div class="col-3">
+                        <h3>Types de peau</h3>
+                        <ul class="tri">
+                            <li><a href="">Peau sèche à très sèche</a></li>
+                            <li><a href="">Peau normale à mixte</a></li>
+                            <li><a href="">Peau sensible</a></li>
+                            <li><a href="">Peau grasse</a></li>
+                        </ul>
+                    </div>
+                </div>
             </div>
-        </div>
-      </main>
+            <hr color="#000b10">
+
+            <!--QUICKVIEW POPUP--><!--QUICKVIEW POPUP--><!--QUICKVIEW POPUP--><!--QUICKVIEW POPUP-->
+
+            <div class="container">
+                    <div class="text-center" id="quickview_popup">
+                        <div class="row">
+                            <!--Photo produit-->
+                            <div class="col-6" >
+                                <img src="../img/2_veritable_eau_florale_fleur_d_oranger_bigaradier_bio_front.png" 
+                                alt="image du produit sélectionné" class="selected_products">
+                            </div>
+        
+                            <!--Description produit-->
+                            <div class="col-6 mb-2">
+                                <div class="text-left">
+                                    <h2 class="titre_produit">Véritable Eau Florale de Rose Ancienne certifiée Bio</h2>
+                                    <h3 class="marque">Sanoflore</h3>
+                                    <p class= "mr-5">
+                                        <span>Description :</span> Lotion de soin peau revitalisée et éclatante – Certifiée Bio Eau florale de Rose Ancienne Bio. Réputée pour ses vertus tonifiantes et illuminatrices, la Véritable Eau Florale de Rose Ancienne Bio est l’alliée des peaux en quête d’éclat.
+                                    </p>
+                                    <p class="prix">18,70 €</p>
+                                    <p>40ml</p>
+        
+                                    <!--bouton quantite-->
+        
+                                    <div class="quantité">
+                                        <div class="input-group">
+                                            <input type="text" id="quantity" name="quantity" class="input-number text-center" value="1" min="1" max="100">
+        
+                                            <span class="input-group-btn">
+                                                <button type="button" class="quantity-right-plus btn btn-number" data-type="plus" data-field="">
+                                                    <span class="glyphicon glyphicon-plus">+</span>
+                                                </button>
+                                            </span>
+        
+                                            <span class="input-group-btn">
+                                                <button type="button" class="quantity-left-minus btn btn-number" data-type="minus" data-field="">
+                                                    <span class="glyphicon glyphicon-minus">-</span>
+                                                </button>
+                                            </span>
+                                        </div>
+                                    </div>
+                                    <input type="submit" value="ajouter au panier" name="panier" class="bouton_val">
+                                </div>
+                            </div>
+                        </div>
+                        <button class="fermer text-center">Fermer la fenêtre</button>
+                    </div>
+                </div>
+            
+            <!-- PRODUITS --><!-- PRODUITS --><!-- PRODUITS --><!-- PRODUITS -->
+
+            <div class="container">
+                <div class="row">
+                    <div class="col-4">
+                        <div class="text-center">
+                            <div class="d-flex justify-content-center align-items-center parent">
+                                <a href=""><img src="../img/2_veritable_eau_florale_fleur_d_oranger_bigaradier_bio_front.png" alt="produits" class="produit"></a>
+
+                                <button class="quickview">Quick view</button>
+                            </div>
+                            <p class="nameproduct">Véritable Eau Florale de Rose Ancienne certifiée Bio</p>
+                            <p class="brand">Sanoflore</p>
+                            <p class="category">Lotion de soin peau revitalisée et éclatante</p>
+                            <p class="price">11,50€ | 200ml</p>
+                        </div>
+                    </div>
+                    <div class="col-4">
+                        <div class="text-center">
+                            <div class="d-flex justify-content-center align-items-center parent">
+                                <a href=""><img src="../img/1_creme_magnifica_3337873401373.png" alt="produits" class="produit"></a>
+    
+                                <button class="quickview">Quick view</button>
+                            </div>
+                            <p class="nameproduct">Crème magnifica Certifiée Bio</p>
+                            <p class="brand">Sanoflore</p>
+                            <p class="category">Crème hydratante anti-imperfections</p>
+                            <p class="price">18,70€ | 40ml</p>
+                        </div>
+                    </div>
+    
+                    <div class="col-4">
+                        <div class="text-center">
+                            <div class="d-flex justify-content-center align-items-center parent">
+                                <a href=""><img src="../img/1_creme_magnifica_3337873401373.png" alt="produits" class="produit"></a>
+    
+                                <button class="quickview">Quick view</button>
+                            </div>
+                            <p class="nameproduct">Crème magnifica Certifiée Bio</p>
+                            <p class="brand">Sanoflore</p>
+                            <p class="category">Crème hydratante anti-imperfections</p>
+                            <p class="price">18,70€ | 40ml</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-4">
+                        <div class="text-center">
+                            <div class="d-flex justify-content-center align-items-center parent">
+                                <a href=""><img src="../img/1_creme_magnifica_3337873401373.png" alt="produits" class="produit"></a>
+
+                                <button class="quickview">Quick view</button>
+                            </div>
+                            <p class="nameproduct">Crème magnifica Certifiée Bio</p>
+                            <p class="brand">Sanoflore</p>
+                            <p class="category">Crème hydratante anti-imperfections</p>
+                            <p class="price">18,70€ | 40ml</p>
+                        </div>
+                    </div>
+                    <div class="col-4">
+                        <div class="text-center">
+                            <div class="d-flex justify-content-center align-items-center parent">
+                                <a href=""><img src="../img/1_creme_magnifica_3337873401373.png" alt="produits" class="produit"></a>
+    
+                                <button class="quickview">Quick view</button>
+                            </div>
+                            <p class="nameproduct">Crème magnifica Certifiée Bio</p>
+                            <p class="brand">Sanoflore</p>
+                            <p class="category">Crème hydratante anti-imperfections</p>
+                            <p class="price">18,70€ | 40ml</p>
+                        </div>
+                    </div>
+    
+                    <div class="col-4">
+                        <div class="text-center">
+                            <div class="d-flex justify-content-center align-items-center parent">
+                                <a href=""><img src="../img/1_creme_magnifica_3337873401373.png" alt="produits" class="produit"></a>
+    
+                                <button class="quickview">Quick view</button>
+                            </div>
+                            <p class="nameproduct">Crème magnifica Certifiée Bio</p>
+                            <p class="brand">Sanoflore</p>
+                            <p class="category">Crème hydratante anti-imperfections</p>
+                            <p class="price">18,70€ | 40ml</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-4">
+                        <div class="text-center">
+                            <div class="d-flex justify-content-center align-items-center parent">
+                                <a href=""><img src="../img/1_creme_magnifica_3337873401373.png" alt="produits" class="produit"></a>
+
+                                <button class="quickview">Quick view</button>
+                            </div>
+                            <p class="nameproduct">Crème magnifica Certifiée Bio</p>
+                            <p class="brand">Sanoflore</p>
+                            <p class="category">Crème hydratante anti-imperfections</p>
+                            <p class="price">18,70€ | 40ml</p>
+                        </div>
+                    </div>
+                    <div class="col-4">
+                        <div class="text-center">
+                            <div class="d-flex justify-content-center align-items-center parent">
+                                <a href=""><img src="../img/1_creme_magnifica_3337873401373.png" alt="produits" class="produit"></a>
+    
+                                <button class="quickview">Quick view</button>
+                            </div>
+                            <p class="nameproduct">Crème magnifica Certifiée Bio</p>
+                            <p class="brand">Sanoflore</p>
+                            <p class="category">Crème hydratante anti-imperfections</p>
+                            <p class="price">18,70€ | 40ml</p>
+                        </div>
+                    </div>
+    
+                    <div class="col-4">
+                        <div class="text-center">
+                            <div class="d-flex justify-content-center align-items-center parent">
+                                <a href=""><img src="../img/1_creme_magnifica_3337873401373.png" alt="produits" class="produit"></a>
+    
+                                <button class="quickview">Quick view</button>
+                            </div>
+                            <p class="nameproduct">Crème magnifica Certifiée Bio</p>
+                            <p class="brand">Sanoflore</p>
+                            <p class="category">Crème hydratante anti-imperfections</p>
+                            <p class="price">18,70€ | 40ml</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
       
-    <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-   <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js"></script> 
-  </body>
+        <!-- Optional JavaScript -->
+        <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+        <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+        <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+        <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+        <script type="text/javascript" src="slick/slick.min.js"></script>
+        <script src="js/scripts_resultat_formulaire.js"></script> 
+    </body>
 </html>
