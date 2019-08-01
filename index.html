@@ -10,7 +10,7 @@
 		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" 
 		integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
 		<link href="https://fonts.googleapis.com/css?family=Barlow|Elsie&display=swap|Elsie+Swash+Caps&display=swap" rel="stylesheet">
-
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/hamburgers/1.1.3/hamburgers.min.css">
 		<link rel="shortcut icon" href="img/favicon.png">
 		<link rel="stylesheet" type="text/css" href="css/styles.css">
 		<!-- <link rel="stylesheet" type="text/css" href="css/Reset.css"> -->
@@ -40,16 +40,45 @@ html5shiv.js"></script> <![endif]-->
 							<p><a href="">Panier</a></p>
 					</div>
 				</div>
+
+				<!-- MENU MOBILE -->
+				<button id="mobile" class="hamburger hamburger--collapse is-active" aria-label="Menu" aria-controls="navigation" type="button">
+  					<span class="hamburger-box">
+    					<span class="hamburger-inner"></span>
+  					</span>
+				</button>
+				<nav id="navigation_mobile" class="col-md-12">
+					<ul>
+						<a href="#"><li>Accueil</li></a>
+						<a href="#"><li>Notre histoire</li></a>
+						<a href="#"><li>Rechercher
+						<a href="#"><li>Connexion/Inscription</li></a>
+						<a href="#"><li>Panier</li></a>
+					</ul>
+				</nav>
+
+				<!-- MENU NAV -->
 				<div class="row">
 					<div class="d-none col-md-4 d-md-block p-0">
 						<nav class= "navbar p-0 d-block w-100 text-left">
 							<ul class="p-0">
 								<li class="left"><a href="">Accueil</a></li>
 								<li class="left"><a href="">Notre histoire</a></li>
-								<li class="left"><a href="">Shop</a></li>
-							</ul>
-						</nav>
-					</div>
+								<div class="dropdown">
+									<button class="btn"><li class="left dropdown-toggle" id="dropdownMenuButton" data-toggle="dropdown"><a href="">Shop</a></li></button>
+										<div class="cara_produits_1" id="menu_cat">
+											<ul class="float-left">
+												<li><a href="">Visage</li></a>
+												<li><a href="">Corps</li></a>
+												<li><a href="">Cheveux</li></a> 
+												<li><a href="">Routine</li></a>
+												<li><a href="">Marques</li></a>
+											</ul>
+										</div>	
+									</div>
+								</ul>
+							</nav>
+						</div>
 
 					<div class="col-12 col-md-4 m-0">
 							<div class="identite_visuelle mx-auto">
@@ -361,7 +390,7 @@ html5shiv.js"></script> <![endif]-->
 		<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>  
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
 		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
-		<script src="js/script.js"></script>	
+		<script src="produits/js/scripts_form.js"></script>	
 	</body>
 
 </html>

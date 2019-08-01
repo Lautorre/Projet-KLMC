@@ -12,6 +12,37 @@ body {
   }
 
 
+@media (min-width: 1025px) and (max-width: 1280px) {
+  
+#navigation_mobile, #mobile {
+    display:none;
+  
+}
+
+/* 
+  ##Device = Tablets, Ipads (portrait)
+  ##Screen = B/w 768px to 1024px
+*/
+
+@media (min-width: 768px) and (max-width: 1024px) and (orientation: portrait landscape) {
+  
+  //CSS
+  
+}
+
+/* 
+  ##Device = Most of the Smartphones Mobiles (Portrait)
+  ##Screen = B/w 320px to 479px
+*/
+
+@media (min-width: 320px) and (max-width: 480px) {
+  
+#navigation_mobile, #mobile {
+    display:none;
+}
+  
+}
+
 /* HEADER */
 
 .identite_visuelle {
@@ -23,6 +54,23 @@ body {
     width:250px;
     min-height: 10px;
 }
+
+#menu-cat.li {
+    list-style-type: none;
+
+}
+
+/* NAVBAR */
+
+#navigation_mobile a {
+  background-color: white;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  display: block;
+}
+
+
 /* fin résultats */
 /* page produit seul */
 img {
