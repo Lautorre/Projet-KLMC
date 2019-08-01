@@ -1,27 +1,6 @@
 $(document).ready(function(){
 
-    // FOND PROGRESSIF PAGE RESULTAT PRODUIT
 
-    function EasyPeasyParallax() {
-        let scrollPos = $(document).scrollTop();
-        let targetOpacity = 0;
-        console.log('scroll position:'+(scrollPos*100)/10);
-        
-        let userHeight = Math.max(document.documentElement.clientHeight, window.innerHeight || 0);
-        scrollPos > 0.20*userHeight ? ( targetOpacity = ((scrollPos*100)/10 ) / 10000) : 1;
-
-        console.log(targetOpacity)
-        $('#resultat').css({
-            'background-color': 'rgba(242, 189, 222, '+ targetOpacity +')'
-        });
-        console.log(scrollPos,targetOpacity);
-    };
-    
-    $(function(){
-        $(window).scroll(function() {
-            EasyPeasyParallax();
-        });
-    });
 
     function EasyPeasyParallax() {
         let scrollPos = $(document).scrollTop();
@@ -43,6 +22,29 @@ $(document).ready(function(){
             EasyPeasyParallax();
         });
     });
+
+        // FOND PROGRESSIF PAGE RESULTAT PRODUIT
+
+        function EasyPeasyParallax2() {
+            let scrollPos = $(document).scrollTop();
+            let targetOpacity = 0;
+            console.log('scroll position:'+(scrollPos*100)/10);
+            
+            let userHeight = Math.max(document.documentElement.clientHeight, window.innerHeight || 0);
+            scrollPos > 0.20*userHeight ? ( targetOpacity = ((scrollPos*100)/10 ) / 10000) : 1;
+    
+            console.log(targetOpacity)
+            $('#resultat').css({
+                'background-color': 'rgba(242, 189, 222, '+ targetOpacity +')'
+            });
+            console.log(scrollPos,targetOpacity);
+        };
+        
+        $(function(){
+            $(window).scroll(function() {
+                EasyPeasyParallax2();
+            });
+        });
 
         
        // SLIDER
