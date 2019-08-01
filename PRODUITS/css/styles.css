@@ -70,13 +70,58 @@ a {
     margin-top: 100px;
 }
 
-h2.intro {
-    font-family: 'Elsie Swash Caps', cursive;
+span {
     font-weight: bold;
 }
 
-.bstof{
-    font-size: 20px;
+.prix {
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.quantity-right-plus, .quantity-left-minus{
+    color: black;
+    background: none;
+}
+
+#quantity {
+    width: 40px;
+}
+
+.bouton_val{
+    border-width: 2px;
+    background-color: none;
+    width: 190px;
+}
+
+span.whishlist {
+    background: url(../../img/coeur_wishlist.svg) center center / 40px no-repeat;
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+.heart {
+    height: 60px;
+    width: 60px;
+    border: none;
+    background-color:transparent;
+}
+
+.cara_butn_1, .cara_butn_2, .cara_butn_3{
+    font-weight: bold;
+    font-size: 1.5em;
+    margin-bottom: 10px;
+    border-bottom: 1px solid #000b10;
+}
+
+h1.title{
+    font-family: 'Elsie Swash Caps', cursive;
+    font-weight: bold;
+    font-size: 40px;
+    margin-top: 80px;
+    margin-bottom: 20px;
+    border-bottom: 1px solid #000b10;
 }
 
 /* PRODUIT */
@@ -111,6 +156,11 @@ input {
     width: 300px;
 }
 
+/* input section adresse panier */
+input[type="checkbox"] {
+    height:10px;
+    width: 10px;
+}
 
 .rule {
     font-style: italic;
@@ -128,6 +178,7 @@ ul.list {
     margin-top: 40px;
 }
 /* page produits */
+
 #produit_img {
     width:100%;
     align-content:center;
@@ -153,6 +204,7 @@ ul.list {
 /* page résultats formulaire */
 #résultats_form, #suggestions {
     height: 50vh;
+    width:100%
 
 }
 

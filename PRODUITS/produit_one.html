@@ -11,7 +11,9 @@
 		integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
 		<link href="https://fonts.googleapis.com/css?family=Barlow|Elsie&display=swap|Elsie+Swash+Caps&display=swap" rel="stylesheet">
 
-		<link rel="shortcut icon" href="../img/favicon.png">
+        <link rel="shortcut icon" href="../img/favicon.png">
+        <link rel="stylesheet" type="text/css" href="slick/slick.css"/>
+        <link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
 		<link rel="stylesheet" type="text/css" href="css/styles.css">
 		<!-- <link rel="stylesheet" type="text/css" href="css/Reset.css"> -->
 		<!-- <link rel="stylesheet" type="text/css" href="css/Normalize.css"> -->
@@ -75,63 +77,206 @@
             <div class="container">
                 <div class="row">
                     <!--Photo produit-->
-                    <div class="col-6 mr-2" >
-                            <img src="../img/2_veritable_eau_florale_fleur_d_oranger_bigaradier_bio_front.png" alt="image du produit sélectionné" class="selected_products">
+                    <div class="col-6" >
+                        <img src="../img/2_veritable_eau_florale_fleur_d_oranger_bigaradier_bio_front.png" 
+                        alt="image du produit sélectionné" class="selected_products">
                     </div>
+
+
+
                     
                     <!--Description produit-->
                     <div class="col-6 mb-2">
-                        <div class="text-center">
+
+                        <div class="text-left">
                             <h2 class="titre_produit">Véritable Eau Florale de Rose Ancienne 
                                     certifiée Bio</h2>
-                            <h3 class="categorie">Hydrolat</h3>
+                            <h3 class="marque">Sanoflore</h3>
+
                             <p>
-                                Lotion de soin peau revitalisée et éclatante – Certifiée Bio
+                                <span>Description :</span>Lotion de soin peau revitalisée et éclatante – Certifiée Bio
                                 Eau florale de Rose Ancienne Bio. Réputée pour ses vertus tonifiantes et illuminatrices, la Véritable Eau Florale de Rose Ancienne Bio est l’alliée des peaux en quête d’éclat.
                             </p>
-                            <p>Prix</p>
-                            <p>Contenance</p>
-                            <p>Quantité</p>
-                        </div>
-                        <button class="btn">Panier</button>
-                        
-                        <p><a class="btn btn-light" data-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false"
-                        aria-controls="collapseExample">Bénéfice</a></p>
-                        <div class="collapse" id="collapseExample">
-                            <div class="card card-body">
-                                        lorem
-                            </div>
-                        </div>
-                        <p>
-                            <a class="btn btn-light" data-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false">Composition</a>
-                            <div class="collapse" id="collapseExample">
-                                <div class="card card-body">
-                                        lorem
+                            <p class="prix">11,50 €</p>
+                            <p>200ml</p>
+
+                            <!--bouton quantite-->
+
+                            <div class="quantité">
+                                <div class="input-group">
+                                    <input type="text" id="quantity" name="quantity" class="input-number text-center" value="1" min="1" max="100">
+
+                                    <span class="input-group-btn">
+                                        <button type="button" class="quantity-right-plus btn btn-number" data-type="plus" data-field="">
+                                            <span class="glyphicon glyphicon-plus">+</span>
+                                        </button>
+                                    </span>
+
+                                    <span class="input-group-btn">
+                                        <button type="button" class="quantity-left-minus btn btn-number" data-type="minus" data-field="">
+                                            <span class="glyphicon glyphicon-minus">-</span>
+                                        </button>
+                                    </span>
                                 </div>
                             </div>
-                        </p>
-                        <a class="btn btn-light" data-toggle="collapse" href="#collapseExample" role="button"aria-expanded="false">Conseil</a>
-                            <div class="collapse" id="collapseExample">
-                                <div class="card card-body">
-                                            lorem
+                        </div>
+                            <!-- BOUTON PANIER -->
+                        <form class="mt-4 d-flex align-items-center">
+                            <input type="submit" value="ajouter au panier" name="panier" class="bouton_val">
+                            <button class="heart"><span class="whishlist"></span></button>
+
+                        </form>
+
+
+                        <div class="mt-4">
+                            <a class="cara_butn_1 btn p-0" data-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false"
+                            aria-controls="collapseExample">Bénéfice</a>
+                                <div class="cara_produits_1">
+                                    <p>Formulée à 99% d’ingrédients Bio, fraîche et non-diluée, elle recèle de nombreux bienfaits et usages qui en font un incontournable des rituels de beauté. Bien plus qu’un simple geste rafraîchissant, cette brume est une véritable lotion de soin qui apaise et contribue à renforcer la fonction barrière de la peau, possédant un pouvoir anti-oxydant équivalent à celui de la Vitamine C.</p>
                                 </div>
+                        </div>
+
+                        <div>
+                            <a class="cara_butn_2 btn p-0" data-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false">Composition</a>
+                            <div class="cara_produits_2">
+                                <p>ROSA DAMASCENA FLOWER WATER* - AQUA / WATER - GERANIOL- LINALOOL - EUGENOL - ARGININE - CITRONELLOL - CITRAL - CITRIC ACID - DEHYDROACETIC ACID - BENZYL ALCOHOL.</p>
                             </div>
-                        </p>
+                        </div>
+
+                        <div>
+                            <a class="cara_butn_3 btn p-0" data-toggle="collapse" href="#collapseExample" role="button"aria-expanded="false">Conseil</a>
+                            <div class="cara_produits_3">
+                                <p>Appliquez en lotion ou brumisation sur le visage, en tapotant délicatement au coton les zones où vous craignez l’apparition de rides. Vaporisez sur le visage tout au long de la journée pour apporter fraîcheur et éclat à la peau.</p>
+                            </div>
+                        </div>
+
                     </div>
                 </div>
-            </div>
 
+                    <!-- Caroussel "VOUS AIMEREZ AUSSI" -->
                     <section id="like" class="col-12 mt-3 text-center">
-                        <h2 class="text-center">Vous aimerez aussi</h2>
-                        
+                        <h1 class="title">Vous aimerez aussi</h1>
+
+                        <div class="autoplay">
+                            <div>
+                                <div class="text-center">
+                                    <img src="../img/creme-solaire-minerale-corps-spf-50.png" alt="produits" >
+                                    <p class="nameproduct">Eco Sun Shield</p>
+                                    <p class="brand">Seventy-One</p>
+                                    <p class="category">crème solaire</p>
+                                    <p class="price">22€ | 20ml</p>
+                                </div>
+                            </div>
+
+                            <div>
+                                <div class="text-center">
+                                    <img src="../img/creme-solaire-minerale-corps-spf-50.png" alt="produits" >
+                                    <p class="nameproduct">Eco Sun Shield</p>
+                                    <p class="brand">Seventy-One</p>
+                                    <p class="category">crème solaire</p>
+                                    <p class="price">22€ | 20ml</p>
+                                </div>
+                            </div>
+
+                            <div>
+                                <div class="text-center">
+                                    <img src="../img/creme-solaire-minerale-corps-spf-50.png" alt="produits" >
+                                    <p class="nameproduct">Eco Sun Shield</p>
+                                    <p class="brand">Seventy-One</p>
+                                    <p class="category">crème solaire</p>
+                                    <p class="price">22€ | 20ml</p>
+                                </div>
+                            </div>
+
+                            <div>
+                                <div class="text-center">
+                                    <img src="../img/creme-solaire-minerale-corps-spf-50.png" alt="produits" >
+                                    <p class="nameproduct">Eco Sun Shield</p>
+                                    <p class="brand">Seventy-One</p>
+                                    <p class="category">crème solaire</p>
+                                    <p class="price">22€ | 20ml</p>
+                                </div>
+                            </div>
+
+                            <div>
+                                <div class="text-center">
+                                    <img src="../img/creme-solaire-minerale-corps-spf-50.png" alt="produits" >
+                                    <p class="nameproduct">Eco Sun Shield</p>
+                                    <p class="brand">Seventy-One</p>
+                                    <p class="category">crème solaire</p>
+                                    <p class="price">22€ | 20ml</p>
+                                </div>
+                            </div>
+                        </div>
                     </section>
+                    
                     <section id="gamme" class="col-12 mt-3 text-center">
-                        <h2 class="text-center">Dans la même gamme</h2>
                         
+                        <h2 class="text-center">Dans la même gamme</h2>
+                            
+                    </section>
+                
+
+         <!-- Caroussel "VOUS AIMEREZ AUSSI" -->
+                    <section>
+                        <section id="like2" class="col-12 mt-3 text-center">
+                        <h1 class="title">Vous aimerez aussi</h1>
+                        <div class="autoplay">
+                            <div>
+                                <div class="text-center">
+                                    <img src="../img/creme-solaire-minerale-corps-spf-50.png" alt="produits" >
+                                    <p class="nameproduct">Eco Sun Shield</p>
+                                    <p class="brand">Seventy-One</p>
+                                    <p class="category">crème solaire</p>
+                                    <p class="price">22€ | 20ml</p>
+                                </div>
+                            </div>
+
+                            <div>
+                                <div class="text-center">
+                                    <img src="../img/creme-solaire-minerale-corps-spf-50.png" alt="produits" >
+                                    <p class="nameproduct">Eco Sun Shield</p>
+                                    <p class="brand">Seventy-One</p>
+                                    <p class="category">crème solaire</p>
+                                    <p class="price">22€ | 20ml</p>
+                                </div>
+                            </div>
+
+                            <div>
+                                <div class="text-center">
+                                    <img src="../img/creme-solaire-minerale-corps-spf-50.png" alt="produits" >
+                                    <p class="nameproduct">Eco Sun Shield</p>
+                                    <p class="brand">Seventy-One</p>
+                                    <p class="category">crème solaire</p>
+                                    <p class="price">22€ | 20ml</p>
+                                </div>
+                            </div>
+
+                            <div>
+                                <div class="text-center">
+                                    <img src="../img/creme-solaire-minerale-corps-spf-50.png" alt="produits" >
+                                    <p class="nameproduct">Eco Sun Shield</p>
+                                    <p class="brand">Seventy-One</p>
+                                    <p class="category">crème solaire</p>
+                                    <p class="price">22€ | 20ml</p>
+                                </div>
+                            </div>
+
+                            <div>
+                                <div class="text-center">
+                                    <img src="../img/creme-solaire-minerale-corps-spf-50.png" alt="produits" >
+                                    <p class="nameproduct">Eco Sun Shield</p>
+                                    <p class="brand">Seventy-One</p>
+                                    <p class="category">crème solaire</p>
+                                    <p class="price">22€ | 20ml</p>
+                                </div>
+                            </div>
+                        </div>
                     </section>
                 </div>
             </div>
         </main>
+
 
         <!--FOOTER-->
         <footer>
@@ -191,6 +336,9 @@
     <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script type="text/javascript" src="slick/slick.min.js"></script>
     <script src="js/scripts_form.js"></script>
     
   </body>
