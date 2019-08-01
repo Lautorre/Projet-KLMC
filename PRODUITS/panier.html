@@ -8,6 +8,8 @@
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href=" https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/webfonts/fa-solid-900.svg">
     <link rel="stylesheet" href="../css/styles.css">
 </head>
   <body>
@@ -15,83 +17,109 @@
     <main>
        <div class="container">
             <div class="row col-12">
-                <h2 class="text-center col-12">Mon Panier</h2>
+                <h2 class="text-center col-12">Mon Panier</h2> 
+                <span class""> <i class="fas fa-shopping-cart p-2"></i></span>
+
                     <section id="recap_panier">
                         <table>
-                                <tr  row="2">
-                                <th>Produit</th>
-                                <th>Description</th>
-                                <th>Disponibilité</th>
-                                <th>Prix</th>
-                                <th>Quantité</th>
-                                <th>Total</th>
-                        </tr>
+                                <tr row="2" class="text-center m-4">
+                                    <th>Produit</th>
+                                    <th>Description</th>
+                                    <th>Disponibilité</th>
+                                    <th>Prix</th>
+                                    <th>Quantité</th>
+                                    <th>Total</th>
+                                </tr>
 
-                        <tr>
-                            <td>
-                                <img src="" alt="">
-                            </td>
-                            <td></td>
-                            <td>En stock</td>
-                            <td>€</td>
-                            <td>
-                                <i class="far fa-plus-square">''</i>
-                                <i class="far fa-minus-square">''</i>
-                            </td>
-                            <td>XX €</td>
-                        </tr>
-                   </table>
+                                <tr>
+                                    <td>
+                                        <img src="" alt="">
+                                    </td>
+                                    <td></td>
+                                    <td>En stock</td>
+                                    <td>€</td>
+                                    <td>
+                                        <i class="far fa-plus-square"></i>
+                                        <i class="far fa-minus-square"></i>
+                                    </td>
+                                    <td>XX €</td>
+                                </tr>
+                        </table>
                 </section>
 
                 <section id="adresse" class="col-12">
                     <h2>Adresses</h2>
                         <span>Choisissez une adresse de livraison</span>
-                        <div class="form-group">
-                          <label for="adresse">Domicile</label>
-                          <select multiple class="form-control" name="adresse" id="">
-                            <option>lorem</option>
-                            <option>lorem</option>
-                            <option>lorem</option>
-                          </select>
-                          <div class="col-6">
-                          <input type="checkbox" name="utiliser" id=""><p class="float-left">Utiliser</p>
-                          
-                          </div>
+                            <div class="form-group">
+                                <label for="adresse"></label>
+                                    <select class="form-control mb-1" name="adresse" id="">
+                                        <option>lorem</option>
+                                        <option>lorem</option>
+                                        <option>lorem</option>
+                                    </select>
+                            </div>
+                            <div class="col-6">
+                                <input type="checkbox" name="utiliser" id=""><p class="float-left">Utiliser</p>            
+                            </div>
 
-                          <div class="col-6 float-left mt-3">
+                            <div class="col-6 float-left mt-3">
                               <h3>Votre adresse de livraison</h3>
                               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam optio repudiandae molestias, rerum voluptas recusandae dolore ea debitis quos inventore modi. Rerum, nam debitis facere deleniti ducimus non voluptatem sunt.</p>
                               <button class="btn-warning">Modifier</button>
-                          </div>
-                          <div class="col-6 float-right mt-3">
+                            </div>
+                            <div class="col-6 float-right mt-3">
                               <h3>Votre adresse de facturation</h3>
                               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo vero molestiae dolorum distinctio. Voluptates reprehenderit amet illo neque, veniam sapiente voluptas ducimus, deserunt officia maxime ex veritatis non cum ipsam?</p>
                               <button class="btn-warning">Modifier</button>
-                          </div>
-                          <button class="btn-success mt-2">Ajouter une adresse</button>
-                        </div>
-
+                            </div>
+                            <div>
+                                <button class="btn-success mt-2 mb-2">Ajouter une adresse</button>
+                            </div>
                 </section>
 
                 <section id="livraison">
                     <h3>Options de livraison</h3>
-                        <small>Choisissez une option de livraison</small>
-                        <ul>
-                            <li>Chronopost</li>
-                            <li>Colissimo</li>
-                            <li>Standard</li>
-                        </ul>
+                        <span>Choisissez une option de livraison</span>
+                            <div class="form-group">
+                                <label for="option_livraison"></label>
+                                <select class="form-control mb-1" name="option_livraison" id="">
+                                    <option>Colissimo</option>
+                                    <option>Chronopost</option>
+                                    <option>Point relais</option>
+                                </select>
+                            </div>
                 </section>
 
                 <section id="paiement" class="col-12">
                     <h3>Moyens de paiement</h3>
-                        <small>Visa/Electron/Mastercard</small>
+                        <span>Visa/Electron/Mastercard</span>
+                        <span>
+                            <i class="fab fa-cc-mastercard"></i>
+                            <i class="fab fa-cc-visa"></i>
+                            <i class="fab fa-cc-stripe"></i>
+                        </span>
 
-
-                </section>
+                        <div class="form-group">
+                          <label for="carte"></label>
+                            <select class="form-control" name="carte" id="">
+                              <option>Visa</option>
+                              <option>Electron</option>
+                              <option>Mastercard</option>
+                            </select>
+                        </div>
+                        <div>
+                            <form action="" class="form-group float-left"  method="POST">
+                                <input type="text" name="titulaire" placeholder="Nom complet" required>
+                                <input type="text" name="numero" placeholder="Numéro de carte" required>
+                                <input type="text" name="expiration" placeholder="MM/AA" required>
+                                <input type="text" name="security" placeholder="Code CVC" required>
+                        </div>
+                                <button class="btn btn-success float-left">Payer</button>
+                            </form>
+                    </section>
+                </div>
             </div>
-       </div>
-    </main>
+        </main>
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>

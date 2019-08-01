@@ -156,6 +156,11 @@ input {
     width: 300px;
 }
 
+/* input section adresse panier */
+input[type="checkbox"] {
+    height:10px;
+    width: 10px;
+}
 
 .rule {
     font-style: italic;
@@ -199,6 +204,7 @@ ul.list {
 /* page résultats formulaire */
 #résultats_form, #suggestions {
     height: 50vh;
+    width:100%
 
 }
 
