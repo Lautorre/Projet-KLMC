@@ -88,13 +88,40 @@ span {
     width: 40px;
 }
 
-h2.intro {
-    font-family: 'Elsie Swash Caps', cursive;
-    font-weight: bold;
+.bouton_val{
+    border-width: 2px;
+    background-color: none;
+    width: 190px;
 }
 
-.bstof{
-    font-size: 20px;
+span.whishlist {
+    background: url(../../img/coeur_wishlist.svg) center center / 40px no-repeat;
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+.heart {
+    height: 60px;
+    width: 60px;
+    border: none;
+    background-color:transparent;
+}
+
+.cara_butn_1, .cara_butn_2, .cara_butn_3{
+    font-weight: bold;
+    font-size: 1.5em;
+    margin-bottom: 10px;
+    border-bottom: 1px solid #000b10;
+}
+
+h1.title{
+    font-family: 'Elsie Swash Caps', cursive;
+    font-weight: bold;
+    font-size: 40px;
+    margin-top: 80px;
+    margin-bottom: 20px;
+    border-bottom: 1px solid #000b10;
 }
 
 /* PRODUIT */
@@ -146,6 +173,7 @@ ul.list {
     margin-top: 40px;
 }
 /* page produits */
+
 #produit_img {
     width:100%;
     align-content:center;
