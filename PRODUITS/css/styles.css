@@ -176,6 +176,7 @@ ul.list {
 /* page résultats formulaire */
 #résultats_form, #suggestions {
     height: 50vh;
+    width:100%
 
 }
 
