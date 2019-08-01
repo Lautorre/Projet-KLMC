@@ -26,7 +26,7 @@ body {
 
 @media (min-width: 768px) and (max-width: 1024px) and (orientation: portrait landscape) {
   
-  //CSS
+  /* //CSS */
   
 }
 
@@ -93,7 +93,7 @@ li.right {
 }
 
 a {
-    color: #000b10;;
+    color: #000b10;
 }
 
 .navbar {
@@ -273,7 +273,7 @@ ul.list {
 
 /* POPUP */
 
-#quickview_popup{
+#quickview_popup {
     background-color : rgb(242, 189, 222);
     width: 75vw;
     display: none;
