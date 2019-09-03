@@ -6,9 +6,10 @@ html{
 
 body{
     font-family: 'Barlow', sans-serif;
-    background: url("../img/background.png") center top/ cover no-repeat, linear-gradient(#fcdb4e, #fcc1f6, #d3cb65);
+    background: url("../img/background.png") center top/ cover no-repeat;
     color: #000b10;
     font: 100%;
+    height: 100vh;
 }
 
 /* HEADER */
@@ -145,34 +146,18 @@ ul.list {
     margin-top: 40px;
 }
 /* page produits */
-#produit_img {
-    width:100%;
-    align-content:center;
 
-}
-.parent {
-    position:relative;
-    
-
-}
-.parent:hover button {
-    opacity: 1;
-}
-
-.quickview {
-    position: absolute;
-    opacity: 1;
-}
-/* fin page produits */
-#res_img, #sug_img {
-     width:100%;
-    align-content:center;
-}
-/* page résultats formulaire */
-#résultats_form, #suggestions {
-    height: 50vh;
-
-}
 
 
 /* fin produit */
+
+#canvas-basic {
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
